@@ -1,0 +1,13 @@
+.ProductList {
+  margin: 0 5vw;
+}
+
+.ProductList ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.ProductList li {
+  margin: 1rem;
+}
