@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useSelector, shallowEqual } from 'react-redux';
-// import './NavBar.css';
 
 const NavBar = () => {
   const cart = useSelector((st) => st.cart, shallowEqual);

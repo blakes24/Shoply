@@ -1,0 +1,23 @@
+.CartItem {
+  border: 1px solid lightgray;
+  margin: 1vh 0;
+  padding: 5px;
+  text-align: left;
+  align-items: center;
+  img {
+    width: 100%;
+    max-width: 75px;
+  }
+  h5 {
+    text-transform: capitalize;
+  }
+  input {
+    max-width: 60px;
+  }
+  .col {
+    padding: 5px;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

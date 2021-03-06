@@ -5,7 +5,6 @@ const INITIAL_STATE = { products: data.products, cart: {} };
 function rootReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'ADD_ITEM':
-      console.log(action.payload);
       // get value of item if present, then add 1
       let value = state.cart[action.payload] || 0;
       value += 1;
@@ -18,7 +17,6 @@ function rootReducer(state = INITIAL_STATE, action) {
       return { ...state, cart: cart };
 
     case 'UPDATE_ITEM':
-      console.log(action.payload);
       // set quantity of given item
       let qty = action.payload.qty;
       return { ...state, cart: { ...state.cart, [action.payload.item]: qty } };

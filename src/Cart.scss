@@ -1,0 +1,30 @@
+.Cart {
+  h2 {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .checkout {
+    margin: 1rem .1rem;
+    width: 100%;
+  }
+  .order {
+    justify-content: center;
+  }
+}
+
+.Cart-summary {
+  border: 1px solid lightgray;
+  padding-top: 10px;
+  margin: 1vh 0;
+  .col {
+    padding: 0px 10px;
+    font-size: 0.9rem;
+  }
+  .total {
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+}

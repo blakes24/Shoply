@@ -1,11 +1,9 @@
 import { useSelector, shallowEqual } from 'react-redux';
 import ProductCard from './ProductCard';
-import './ProductList.css';
+import './ProductList.scss';
 
 function ProductList() {
   const products = useSelector((st) => st.products, shallowEqual);
-
-  // const removeItem = (item) => dispatch(remove(item));
 
   return (
     <div className="ProductList">
@@ -26,6 +24,3 @@ function ProductList() {
 }
 
 export default ProductList;
-
-/* <button onClick={() => addItem(item)}>Add to cart</button>{' '}
-            <button onClick={() => removeItem(item)}>Remove item</button>{' '} */
