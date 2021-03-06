@@ -1,10 +1,10 @@
-import Shoply from './Shoply';
+import Routes from './Routes';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Shoply />
+      <Routes />
     </div>
   );
 }

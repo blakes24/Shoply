@@ -1,15 +1,21 @@
 .ProductCard {
   width: 25vw;
   height: 35vw;
+  min-width: 150px;
+  min-height: 200px;
   display: inline-block;
-  margin: 1vw;
+  margin: 5vw 2vw;
+  text-align: left;
   text-transform: capitalize;
 }
 .ProductCard-pic {
-  width: 25vw;
+  width: 100%;
   height: 25vw;
+  min-height: 150px;
   vertical-align: middle;
-  display: table-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ProductCard img {
@@ -17,9 +23,25 @@
   max-height: 90%;
   width: auto;
   height: auto;
-  margin: 5% 0;
+  margin: 4% auto;
 }
 
 .ProductCard h4 {
   margin: .2rem;
+  font-size: 1.2rem;
+}
+
+.ProductCard-price {
+  padding-bottom: 5px;
+  border-bottom: 2px solid lightgray;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .ProductCard {
+    width: 18vw;
+    height: 25vw;
+  }
+  .ProductCard-pic {
+    height: 18vw;
+  }
 }
